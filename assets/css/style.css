@@ -1,0 +1,23 @@
+header{
+    grid-area: header;
+    background-color: rgb(12, 161, 30);
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(69, 152, 236);
+}
+main{
+    grid-area: main;
+    background-color: rgb(236, 220, 69);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(12, 161, 30);
+}
+.layout{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer" ;
+}
