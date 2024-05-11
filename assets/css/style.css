@@ -1,23 +1,78 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(226, 234, 243);
+}
+/*ESTRUCTURA LAYOUT*/
 header{
     grid-area: header;
-    background-color: rgb(12, 161, 30);
+    background-color: rgb(18, 98, 178);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
 }
 nav{
     grid-area: nav;
-    background-color: rgb(69, 152, 236);
+    background-color: rgb(237, 239, 152);
+    color: rgb(18, 98, 178);
 }
 main{
     grid-area: main;
-    background-color: rgb(236, 220, 69);
+    background-image:url(../img/fondo_cielo.jpg) ;
+    background-size: cover;
+    text-align: center;
 }
 footer{
     grid-area: footer;
-    background-color: rgb(12, 161, 30);
+    background-color: rgb(18, 98, 178);;
+    text-align: center;
 }
 .layout{
     display: grid;
     grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer" ;
+    "header header header header"
+    "nav main main main"
+    "footer footer footer footer" ;
 }
+/*ESTRUCTURA GRID DE PRODUCTOS*/
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+   
+}
+/*DISEÑO DE CARD*/
+.card {
+    background-color: rgb(247, 250, 250);
+    border: 1px solid rgb(69, 152, 236);
+    height: 38vh; 
+    width: 13vw;
+    margin: 5%;
+    border-radius: 5%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.card_img{
+    border-radius: 50%;
+}
+.img_card{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5%;
+}
+.card_valor{
+    color:rgb(69, 152, 236);
+    height: 9vh;
+    margin: 5%;
+    font-size: small;
+}
+.card_comprar{
+    background-color: rgb(69, 152, 236);
+    height: 9vh;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+
+
+
